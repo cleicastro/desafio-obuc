@@ -1,0 +1,133 @@
+:root {
+    --color-background: #f0f0f7;
+    --color-primary: #290628;
+    --color-primary-dark: #000000;
+    --color-primary-lighter: #292530;
+    --color-primary-light: #3b0086;
+    --color-secundary: #04d361;
+    --color-secundary-dark: #04bf58;
+    --color-title-in-primary: #ffffff;
+    --color-text-in-primary: #d4c2ff;
+    --color-text-title: #32264d;
+    --color-text-complement: #9c98a6;
+    --color-text-base: #6a6180;
+    --color-line-in-white: #e6e6f0;
+    --color-input-background: #f8f8fc;
+    --color-button-text: #ffffff;
+    --color-box-base: #ffffff;
+    --color-box-footer: #fafafc;
+  
+    font-size: 60%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-background);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-areas: "header header"
+                        "aside main"
+                        "footer footer";
+}
+
+header {
+    background-image: url("../assets/admin-small.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: header;
+}
+header .title {  
+    height: 100%; 
+    max-width: 450px; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px;
+    background-color: var(--color-primary);
+    opacity: 0.6;
+    clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+}
+
+header .title h2 {
+    color: var(--color-title-in-primary);
+    font: 100 3.4rem Roboto;
+    font-style: italic;
+    margin-left: 48px;
+}
+
+aside {
+    grid-area: aside;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+aside .menu {    
+    width: 90%;
+    padding: 24px;
+}
+
+aside .menu ul li {
+    list-style-type: none;
+    text-align: center;
+    font: 600 1.2rem Roboto;
+    border-radius: 5px;      
+}
+
+.menu ul li a{
+    background-color: var(--color-primary);
+    color: var(--color-line-in-white);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: block;
+}
+.menu ul li a:hover{
+    color: var(--color-line-in-white);
+    background-color: var(--color-primary-light);
+}
+
+main {
+    grid-area: main;
+    overflow-y: scroll;
+}
+
+main .content {
+    padding: 24px;
+    margin-top: 20px;
+    margin-right: 20px;
+    box-shadow: -5px 3px 2px #e6e6f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+main .content .title h2 {
+    color: var(--color-primary);
+    font: 100 3.4rem Roboto;
+    font-style: italic;
+}
+
+footer {
+    background-color: var(--color-primary-dark);
+    grid-area: footer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer img {
+    margin-right: 10px;
+}
+

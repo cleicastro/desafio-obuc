@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processo Seletivo OBUC | Apresentação + Prova Técnica</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href="./css/styles.css" rel="stylesheet"/>
+    <link href="./css/template.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="title">
+                <h2>Administração</h2>
+            </div>
+        </header>
+        <aside>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Acessos Administrativos</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Reporte</a></li>
+                    <li><a href="#">Pesquisa de Satisfação</a></li>
+                    <li><a href="#">Prédios</a></li>
+                    <li><a href="#">Locais de Trabalho</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main>
+            <div class="content">
+                <div class="title">
+                    <h2>Locais de Trabalho</h2>
+                </div>
+                <div class="alert"></div>
+                <form class="form-work-places">
+                    <div class="form-group">
+                        <label for="employee">Funcionário:</label><br>
+                        <input type="text" name="employee" />
+                    </div>
+                    <div class="form-group">
+                        <label for="building">Prédio:</label><br>
+                        <select name="building">
+                            <option value="">Selecione</option> 
+                            <option value="Prédio 1">Prédio 1</option>
+                            <option value="Prédio 2">Prédio 2</option>
+                            <option value="Prédio 3">Prédio 3</option>
+                            <option value="Prédio 4">Prédio 4</option>
+                            <option value="Prédio 5">Prédio 5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="workPlaces">Local de Trabalho:</label><br>
+                        <input type="text" name="workPlaces" />
+                    </div>
+                    <button type="submit" class="button" id="save">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </form>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Funcionário</th>
+                            <th>Prédio</th>
+                            <th>Local de Trabalho</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <img src="./assets/logo.png" alt="logo" height="32">
+        </footer>
+    </div>
+</body>
+<script type="text/javascript" src="./js/script.js"></script>
+</html>
